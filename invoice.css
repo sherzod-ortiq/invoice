@@ -1,0 +1,255 @@
+*	{
+  box-sizing: border-box;
+}
+
+#invoice {
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 800px;
+  background: #fbfbfb;
+}
+
+
+#invoice_header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width:100%; 
+  height: 12%;
+}
+
+
+#header_trapezoid1 {
+  z-index: 1;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  border-bottom: 0px solid #373d55;
+  border-top: 70px solid #373d55;
+  border-left: 0px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 45%;
+}
+
+#invoice_number {
+  z-index: 2;
+  position: absolute;
+  top:35%;
+  left:3%;
+  color:#fbfbfb;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#header_trapezoid2 {
+  z-index: 2;
+  position: absolute;
+  top:15%;
+  right:0%;
+  border-bottom:70px solid #373d55;
+  border-top:0px solid #373d55;
+  border-left:35px solid transparent;
+  border-right:0px solid transparent;
+  width: 45%;
+  height: 0%;
+}
+
+
+#header_trapezoid3 {
+  z-index: 3;
+  position: absolute;
+  top:30%;
+  right:0%;
+  border-bottom:70px solid #ffce38;
+  border-top:0px solid #ffce38;
+  border-left:35px solid transparent;
+  border-right:0px solid transparent;
+  width: 55%;
+  height: 0%;
+}
+
+#icon_logo {
+  z-index: 4;
+  background-image: url(index.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  background-position: -260px -1px;
+  width: 180px;
+  height: 41px;      
+}
+
+
+#invoice_body{
+  z-index: 1;
+  overflow: hidden;
+  width:100%; 
+  height: 76%;
+  padding: 5%;
+}
+
+
+#table_container1{
+  width: 100%;
+  height: 40%;
+  padding: 0.5%;
+}
+
+#table_container2{
+  width: 100%;
+  height: 40%;
+  padding: 0.5%;
+}
+
+#table_container3{
+  width: 100%;
+  height: 10%;
+  padding: 0.5%;
+}
+
+#table1 {
+  width:100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+#table1 td {
+  vertical-align: top;  
+}
+
+.row_title{
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.row_item{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;  
+}
+
+.row_item1{
+  font-family: sans-serif;
+  font-size: 15px;  
+}
+
+
+#table2 {
+  width:100%;
+  border: 0px s0lid red;
+  border-collapse: collapse;  
+}
+
+#table2 th {
+  background-color: #373d55;
+  color:#fbfbfb;
+  font-family: sans-serif;
+  font-size:15px;
+  text-align: left;
+  height: 30px;
+}
+
+#table2 td {
+  color:black;
+  font-family: sans-serif;
+  font-size:15px;  
+  text-align: left;
+  padding: 0.5%;
+  border-bottom: 2px solid #373d55; 
+}
+
+#table3 {
+  width:100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+#table3 td {
+  text-align: right;
+  padding: 0.5%;  
+}
+
+#final_sum_container{
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+#final_sum{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffce38;
+  text-align: center;
+  padding:2%;
+  margin-right:0.3%
+}
+
+#sum_price{
+  font-size: 20px;
+  font-style: normal;
+}
+
+#invoice_footer{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width:100%; 
+  height: 12%;
+}
+
+#footer_trapezoid1 {
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  border-bottom: 0px solid #373d55;
+  border-top: 70px solid #373d55;
+  border-left: 0px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 35%;
+}
+
+#footer_trapezoid2 {
+  z-index: 1;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  border-bottom: 0px solid #ffce38;
+  border-top: 70px solid #ffce38;
+  border-left: 0px solid transparent;
+  border-right: 35px solid transparent;
+  height: 0;
+  width: 45%;
+}
+
+#footer_trapezoid3 {
+  z-index: 3;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  border-bottom: 70px solid #373d55;
+  border-top: 0px solid #373d55;
+  border-left: 35px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+  width: 55%;
+}
+
+
+#footer_email_address {
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+  font-family:sans-serif;
+  font-size: 15px;
+  color: black;
+}
